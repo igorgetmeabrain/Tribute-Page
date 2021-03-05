@@ -1,8 +1,8 @@
 html {box-sizing: border-box; margin: 0; padding: 0;}
 *, *:before, *:after {box-sizing: inherit;}
 
-:root {--green-titles: hsla(144, 100%, 30%, 1); --green-background: hsla(107, 39%, 40%, 0.6); --green-border: hsla(144, 100%, 20%, 1);
---brown-background: linear-gradient(45deg, hsla(19, 69%, 10%, 0.9), hsla(19, 69%, 20%, 0.4)); font-size: 2vw;}
+:root {--green-titles: hsla(144, 100%, 30%, 1); --green-background: hsla(107, 39%, 40%, 0.8); --green-border: hsla(144, 100%, 20%, 1);
+--brown-background: linear-gradient(45deg, hsla(19, 69%, 10%, 1), hsla(19, 69%, 20%, 0.7));}
 
 #background-image {width: 100%; margin-left: -1%;}
 
@@ -15,7 +15,7 @@ html {box-sizing: border-box; margin: 0; padding: 0;}
 
 h1, h2 {
 	font-family: "Satisfy", cursive;
-	font-size: 2.25rem;
+	font-size: 5rem;
 	color: var(--green-titles);
 	text-shadow: 2px 2px 10px hsla(0, 0%, 4%, 1), 2px 2px 10px hsla(0, 0%, 8%, 1), 2px 2px 10px hsla(0, 0%, 10%, 1), 2px 2px 10px hsla(0, 0%, 12%, 1);
 	padding: 1%;
@@ -23,7 +23,7 @@ h1, h2 {
 
 #img-div {margin: 10% 0;}
 
-#image {display: block; max-width: 80vw; margin: auto; opacity: 0.9; filter: contrast(90%) brightness(90%);}
+#image {display: block; max-width: 80vw; width: 1000px; height: auto; margin: auto; opacity: 0.9; filter: contrast(90%) brightness(90%);}
 
 #img-caption {display: table; margin: auto; background-color: var(--green-border);}
 
@@ -33,22 +33,23 @@ h1, h2 {
 	padding: 2%;
 	margin: 7% 1%;
 	border-radius: 1%;
-	font-size: 0.7rem;
+	font-size: 1.5rem;
 	}
 
 #tribute-info a {text-decoration: none; color: blue;}
 
-strong {font-size: 1.25rem;}
+strong {font-size: 3rem;}
 
-.float-left {float: left; max-width: 25%; height: auto; margin: -1% 1% 0 0;}
+.float-left {float: left; max-width: 20%; height: auto; margin: -1% 1% 0 0;}
 
-.float-right {float: right; max-width: 25%; height: auto; margin: -1% 0 0 1%;}
+.float-right {float: right; max-width: 20%; height: auto; margin: -1% 0 0 1%;}
 
 .border {border: 7px solid var(--green-border); border-radius: 1%;}
 
 #business-card {display: block; max-width: 80vw; height: auto; margin: auto; opacity: 0.8; }
 
 footer {
+	font-size: 2rem;
 	text-align: center;
 	color: var(--green-titles);
 	margin: 5% 0;
@@ -56,7 +57,7 @@ footer {
 	transition: all 0.5s linear 0.25s;
 	}
 
-footer:hover {background: var(--green-background);}
+footer:hover, footer:focus {background: var(--green-background);}
 
 #tribute-link {text-decoration: none; color: hsla(55, 100%, 38%, 1);}
 
@@ -70,10 +71,11 @@ strong {font-size: 1.4rem;}
 
 @media (orientation: portrait) and (max-width: 700px)
 {
-#background-image {width: 250%; margin-left: -45%;}
-p {font-size: 2rem;}
-h1, h2 {font-size: 3rem;}
-strong {font-size: 2.25rem;}
+#background-image {width: 300%; margin-left: -55%;}
+p {font-size: 1rem;}
+h1, h2 {font-size: 1.8rem;}
+strong {font-size: 1.25rem;}
+footer {font-size: 1.25rem;}
 .border {border-width: 3px;}
 .float-left {float: none; display: block; max-width: 75vw; height: auto; margin: auto;}
 .float-right {float: none; display: block; max-width: 75vw; height: auto; margin: auto;}
